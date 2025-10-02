@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
+    <title>Divyansh Dwivedi Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+        .portfolio-navbar {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+        }
+        .portfolio-navbar .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+        .portfolio-block {
+            padding: 50px 0;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+        .about-me p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .group {
+            margin-bottom: 40px;
+        }
+        .item {
+            margin-bottom: 30px;
+        }
+        .skills .progress {
+            height: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-info .row {
+            margin-bottom: 10px;
+        }
+        .page-footer {
+            background-color: #182848;
+            color: white;
+            padding: 20px 0;
+        }
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background-size: cover;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html" style="font-size: 1.5rem; color: white;">Divyansh Dwivedi</a>
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="portfolio-block block-intro border-bottom">
+            <div class="container">
+                <div class="avatar" style="background-image: url('/assets/img/avatar.jpg');"></div>
+                <div class="about-me">
+                    <p>Hello! I am <strong>Divyansh Dwivedi</strong>, a passionate software developer with a strong foundation in mathematics, statistics, and computer science. I specialize in building efficient, user-friendly web applications, excelling in competitive programming and disaster management systems. My expertise spans Python, Java, C++, C#, JavaScript, TypeScript, and frameworks like React, Django, and Node.js. I’m driven by solving real-world problems through technology, contributing to open-source projects, and continuously exploring new tools and frameworks.</p>
+                </div>
+                <a class="btn btn-primary" role="button" href="/assets/DivyanshDwivedi_CV.pdf">Download Resume</a>
+            </section>
+        <section class="portfolio-block" id="projects">
+            <div class="container">
+                <div class="heading">
+                    <h2 class="text-center">Projects</h2>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>RESQ Disaster Management System</h3>
+                            <h4 class="organization">AI-Powered Disaster Response Platform</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">2023</span></div>
+                    </div>
+                    <p>A comprehensive platform connecting users to safe zones, volunteers, and emergency services in real-time.</p>
+                    <ul>
+                        <li>Real-time SOS alerts to nearby responders</li>
+                        <li>AutoQ predictive routing for evacuation paths</li>
+                        <li>Quell Zones identification and Q-link communication</li>
+                        <li>Q Badge system for volunteer recognition</li>
+                    </ul>
+                    <p><strong>Technologies</strong>: React.js, Tailwind CSS, Node.js, Firebase (Auth & Realtime DB), Google Maps API, Groq AI</p>
+                    <p><strong>Implementation</strong>: Built with a React frontend for interactive UI, Node.js backend for real-time data via Firebase Cloud Messaging. Google Maps API for geolocation routing, Groq API for AI-driven guidance. Analytics in SQL DB. Deployed on Render with GitHub CI/CD.</p>
+                    <p><a href="https://github.com/Divyansh1610/RESQ">View on GitHub</a> | <a href="https://resq-app.example.com">Live Demo</a></p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Heal - Secure Digital Health Identity</h3>
+                            <h4 class="organization">Smart India Hackathon Project</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">2023</span></div>
+                    </div>
+                    <p>A secure platform for managing health records via Aadhaar-linked QR codes, securing 3rd position at campus level in SIH.</p>
+                    <ul>
+                        <li>Aadhaar ID validation and role-based access (Patient/Doctor)</li>
+                        <li>QR code generation and download for health IDs</li>
+                        <li>Secure health record storage and sharing</li>
+                        <li>Responsive UI with modern design</li>
+                    </ul>
+                    <p><strong>Technologies</strong>: React, TypeScript, Vite, shadcn/ui, Tailwind CSS</p>
+                    <p><strong>Implementation</strong>: Full-stack React app with TypeScript for type safety, Vite for optimized builds. Uses shadcn/ui components styled with Tailwind CSS, form validation, localStorage for data persistence, and qrcode.react for QR encoding. Deployed via Lovable.</p>
+                    <p><a href="https://github.com/Divyansh1610/heal">View on GitHub</a> | <a href="https://health-id-joy.lovable.app">Live Demo</a></p>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>WanderExplorer</h3>
+                            <h4 class="organization">Travel Destination Explorer</h4>
+                        </div>
+                        <div class="col-md-6"><span class="period">2023</span></div>
+                    </div>
+                    <p>An immersive app fetching real-time weather, images, and summaries for global cities.</p>
+                    <ul>
+                        <li>Dynamic city search with weather and image integration</li>
+                        <li>Interactive modal galleries with Wikipedia summaries</li>
+                        <li>Local storage for favorite destinations</li>
+                        <li>Responsive design with animated backgrounds</li>
+                    </ul>
+                    <p><strong>Technologies</strong>: HTML5, CSS3 (Glassmorphism & Animations), Vanilla JavaScript, OpenWeatherMap API, Unsplash API, Wikipedia REST API</p>
+                    <p><strong>Implementation</strong>: Single-page app using vanilla JS for DOM manipulation and async API fetches. LocalStorage for data persistence. Responsive grid layout with media queries. Error handling with auto-dismiss alerts.</p>
+                    <p><a href="https://github.com/Divyansh1610/WanderExplorer">View on GitHub</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block" id="achievements">
+            <div class="container">
+                <div class="heading">
+                    <h2 class="text-center">Achievements</h2>
+                </div>
+                <div class="item">
+                    <p><strong>Smart India Hackathon (SIH) - Heal Project</strong>: Cleared internal college competition and secured 3rd position at campus level.</p>
+                    <p><strong>LeetCode 50 Days Badge 2025</strong>: Solved problems consistently for 50+ days in 2025.</p>
+                    <p><strong>LeetCode DCC September 2025</strong>: Earned badge for completing daily coding challenges.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block">
+            <div class="container">
+                <div class="education group">
+                    <div class="heading">
+                        <h2 class="text-center">Education</h2>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Bachelor of Technology in Computer Science</h3>
+                                <h4 class="organization">[University Name]</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period">Expected Graduation: [Year]</span></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Bachelor of Science in Mathematics, Statistics, and Computer Science</h3>
+                                <h4 class="organization">[University Name]</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period">[Graduation Year]</span></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>CBSE 12th</h3>
+                                <h4 class="organization">Rani Laxmi Bai Memorial School, Lucknow</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period">[Year]</span></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>CBSE 10th</h3>
+                                <h4 class="organization">Rani Laxmi Bai Memorial School, Lucknow</h4>
+                            </div>
+                            <div class="col-md-6"><span class="period">[Year]</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skills portfolio-info-card">
+                                <h2>Skills</h2>
+                                <h3>Python</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="sr-only">90%</span></div>
+                                </div>
+                                <h3>Java</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"><span class="sr-only">85%</span></div>
+                                </div>
+                                <h3>C++</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                </div>
+                                <h3>C#</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                </div>
+                                <h3>JavaScript/TypeScript</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"><span class="sr-only">85%</span></div>
+                                </div>
+                                <h3>React</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"><span class="sr-only">85%</span></div>
+                                </div>
+                                <h3>Django</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                </div>
+                                <h3>Node.js</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"><span class="sr-only">75%</span></div>
+                                </div>
+                                <h3>Machine Learning Basics</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"><span class="sr-only">70%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-info portfolio-info-card" id="contact">
+                                <h2>Contact Info</h2>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-at icon"></i></div>
+                                    <div class="col-9"><a href="mailto:divyanshdwivedi110@gmail.com">divyanshdwivedi110@gmail.com</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-social-linkedin icon"></i></div>
+                                    <div class="col-9"><a href="https://www.linkedin.com/in/divyansh-dwivedi1610">linkedin.com/in/divyansh-dwivedi1610</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-code icon"></i></div>
+                                    <div class="col-9"><a href="https://leetcode.com/u/Divyansh1610/">leetcode.com/u/Divyansh1610/</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-social-github icon"></i></div>
+                                    <div class="col-9"><a href="https://github.com/Divyansh1610">github.com/Divyansh1610</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="stats portfolio-info-card">
+                                <h2>Stats</h2>
+                                <h3>LeetCode Stats</h3>
+                                <img src="https://leetcode-stats.vercel.app/api?username=divyansh1610" alt="LeetCode Stats" style="width: 100%; max-width: 500px;">
+                                <h3>GitHub Stats</h3>
+                                <img src="https://github-readme-stats.vercel.app/api?username=Divyansh1610&show_icons=true&theme=radical" alt="GitHub Stats" style="width: 100%; max-width: 500px;">
+                                <h3>Top Languages</h3>
+                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Divyansh1610&layout=compact&theme=radical" alt="Top Languages" style="width: 100%; max-width: 500px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/divyansh-dwivedi1610" style="background-image: url('/assets/img/linkedin.png'); width: 40px; height: 40px;"></a>
+                <a href="https://github.com/Divyansh1610" style="background-image: url('/assets/img/github.png'); width: 40px; height: 40px;"></a>
+                <a href="https://leetcode.com/u/Divyansh1610/" style="background-image: url('/assets/img/leetcode.png'); width: 40px; height: 40px;"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
