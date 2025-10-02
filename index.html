@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
     <title>Divyansh Dwivedi Portfolio</title>
@@ -42,7 +42,8 @@
             margin-bottom: 20px;
         }
         .contact-info .row {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            align-items: center;
         }
         .page-footer {
             background-color: #182848;
@@ -55,6 +56,22 @@
             display: inline-block;
             background-size: cover;
             margin: 0 10px;
+        }
+        h2 {
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        .organization {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+        .period {
+            font-size: 0.9rem;
+            color: #6c757d;
         }
     </style>
 </head>
@@ -76,20 +93,22 @@
             </div>
         </div>
     </nav>
+
     <main class="page">
         <section class="portfolio-block block-intro border-bottom">
-            <div class="container" style="padding-top:30px">
-                <div class="avatar" style="background-image: url('/assets/divyansh.jpg');"></div>
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="avatar" style="background-image: url('/assets/img/divyansh.jpg');"></div>
                 <div class="about-me">
                     <p>Hello! I am <strong>Divyansh Dwivedi</strong>, a passionate software developer with a strong foundation in mathematics, statistics, and computer science. I specialize in building efficient, user-friendly web applications, excelling in competitive programming and disaster management systems. My expertise spans Python, Java, C++, C#, JavaScript, TypeScript, and frameworks like React, Django, and Node.js. I’m driven by solving real-world problems through technology, contributing to open-source projects, and continuously exploring new tools and frameworks.</p>
                 </div>
-                <a class="btn btn-primary" role="button" href="https://github.com/divyansh1610/divyansh1610.github.io/raw/main/DivyanshDwivedi_CV.pdf" >Download Resume</a>
-            </section>
+                <a class="btn btn-primary" role="button" href="/assets/DivyanshDwivedi_CV.pdf">Download Resume</a>
+            </div>
+        </section>
+
         <section class="portfolio-block" id="projects">
             <div class="container">
-                <div class="heading">
-                    <h2 class="text-center">Projects</h2>
-                </div>
+                <h2>Projects</h2>
                 <div class="item">
                     <div class="row">
                         <div class="col-md-6">
@@ -99,14 +118,17 @@
                         <div class="col-md-6"><span class="period">2025</span></div>
                     </div>
                     <p>A comprehensive platform connecting users to safe zones, volunteers, and emergency services in real-time.</p>
+                    <h4>Key Features</h4>
                     <ul>
                         <li>Real-time SOS alerts to nearby responders</li>
                         <li>AutoQ predictive routing for evacuation paths</li>
                         <li>Quell Zones identification and Q-link communication</li>
                         <li>Q Badge system for volunteer recognition</li>
                     </ul>
-                    <p><strong>Technologies</strong>: React.js, Tailwind CSS, Node.js, Firebase (Auth & Realtime DB), Google Maps API, Groq AI</p>
-                    <p><strong>Implementation</strong>: Built with a React frontend for interactive UI, Node.js backend for real-time data via Firebase Cloud Messaging. Google Maps API for geolocation routing, Groq API for AI-driven guidance. Analytics in SQL DB. Deployed on Render with GitHub CI/CD.</p>
+                    <h4>Technologies</h4>
+                    <p>React.js, Tailwind CSS, Node.js, Firebase (Auth & Realtime DB), Google Maps API, Groq AI</p>
+                    <h4>Implementation</h4>
+                    <p>Built with a React frontend for interactive UI, Node.js backend for real-time data via Firebase Cloud Messaging. Google Maps API for geolocation routing, Groq API for AI-driven guidance. Analytics in SQL DB. Deployed on Render with GitHub CI/CD.</p>
                     <p><a href="https://github.com/Divyansh1610/RESQ">View on GitHub</a> | <a href="https://resq-app.example.com">Live Demo</a></p>
                 </div>
                 <div class="item">
@@ -118,14 +140,17 @@
                         <div class="col-md-6"><span class="period">2025</span></div>
                     </div>
                     <p>A secure platform for managing health records via Aadhaar-linked QR codes, securing 3rd position at campus level in SIH.</p>
+                    <h4>Key Features</h4>
                     <ul>
                         <li>Aadhaar ID validation and role-based access (Patient/Doctor)</li>
                         <li>QR code generation and download for health IDs</li>
                         <li>Secure health record storage and sharing</li>
                         <li>Responsive UI with modern design</li>
                     </ul>
-                    <p><strong>Technologies</strong>: React, TypeScript, Vite, shadcn/ui, Tailwind CSS</p>
-                    <p><strong>Implementation</strong>: Full-stack React app with TypeScript for type safety, Vite for optimized builds. Uses shadcn/ui components styled with Tailwind CSS, form validation, localStorage for data persistence, and qrcode.react for QR encoding. Deployed via Lovable.</p>
+                    <h4>Technologies</h4>
+                    <p>React, TypeScript, Vite, shadcn/ui, Tailwind CSS</p>
+                    <h4>Implementation</h4>
+                    <p>Full-stack React app with TypeScript for type safety, Vite for optimized builds. Uses shadcn/ui components styled with Tailwind CSS, form validation, localStorage for data persistence, and qrcode.react for QR encoding. Deployed via Lovable.</p>
                     <p><a href="https://github.com/Divyansh1610/heal">View on GitHub</a> | <a href="https://health-id-joy.lovable.app">Live Demo</a></p>
                 </div>
                 <div class="item">
@@ -137,36 +162,40 @@
                         <div class="col-md-6"><span class="period">2025</span></div>
                     </div>
                     <p>An immersive app fetching real-time weather, images, and summaries for global cities.</p>
+                    <h4>Key Features</h4>
                     <ul>
                         <li>Dynamic city search with weather and image integration</li>
                         <li>Interactive modal galleries with Wikipedia summaries</li>
                         <li>Local storage for favorite destinations</li>
                         <li>Responsive design with animated backgrounds</li>
                     </ul>
-                    <p><strong>Technologies</strong>: HTML5, CSS3 (Glassmorphism & Animations), Vanilla JavaScript, OpenWeatherMap API, Unsplash API, Wikipedia REST API</p>
-                    <p><strong>Implementation</strong>: Single-page app using vanilla JS for DOM manipulation and async API fetches. LocalStorage for data persistence. Responsive grid layout with media queries. Error handling with auto-dismiss alerts.</p>
+                    <h4>Technologies</h4>
+                    <p>HTML5, CSS3 (Glassmorphism & Animations), Vanilla JavaScript, OpenWeatherMap API, Unsplash API, Wikipedia REST API</p>
+                    <h4>Implementation</h4>
+                    <p>Single-page app using vanilla JS for DOM manipulation and async API fetches. LocalStorage for data persistence. Responsive grid layout with media queries. Error handling with auto-dismiss alerts.</p>
                     <p><a href="https://github.com/Divyansh1610/WanderExplorer">View on GitHub</a></p>
                 </div>
             </div>
         </section>
+
         <section class="portfolio-block" id="achievements">
             <div class="container">
-                <div class="heading">
-                    <h2 class="text-center">Achievements</h2>
-                </div>
+                <h2>Achievements</h2>
                 <div class="item">
-                    <p><strong>Smart India Hackathon (SIH) - Heal Project</strong>: Cleared internal college competition and secured 3rd position at campus level.</p>
-                    <p><strong>LeetCode 50 Days Badge 2025</strong>: Solved problems consistently for 50+ days in 2025.</p>
-                    <p><strong>LeetCode DCC September 2025</strong>: Earned badge for completing daily coding challenges.</p>
+                    <h4>Smart India Hackathon (SIH) - Heal Project</h4>
+                    <p>Cleared internal college competition and secured 3rd position at campus level.</p>
+                    <h4>LeetCode 50 Days Badge 2025</h4>
+                    <p>Solved problems consistently for 50+ days in 2025.</p>
+                    <h4>LeetCode DCC September 2025</h4>
+                    <p>Earned badge for completing daily coding challenges.</p>
                 </div>
             </div>
         </section>
+
         <section class="portfolio-block">
             <div class="container">
                 <div class="education group">
-                    <div class="heading">
-                        <h2 class="text-center">Education</h2>
-                    </div>
+                    <h2>Education</h2>
                     <div class="item">
                         <div class="row">
                             <div class="col-md-6">
@@ -180,7 +209,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h3>Bachelor of Science in Mathematics, Statistics, and Computer Science</h3>
-                                <h4 class="organization">National P.G.</h4>
+                                <h4 class="organization">National P.G. College</h4>
                             </div>
                             <div class="col-md-6"><span class="period">2024</span></div>
                         </div>
@@ -204,6 +233,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="group">
                     <div class="row">
                         <div class="col-md-6">
@@ -260,7 +290,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-1"><i class="icon ion-code icon"></i></div>
-                                    <div class="col-9"><a href="https://leetcode.com/u/Divyansh1610/">leetcode.com/u/Divyansh1610/</a></div>
+                                    <div class="col-9"><a href="https://leetcode.com/u/Divyansh1610/">leetcode.com/u/Divyansh1610</a></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-1"><i class="icon ion-social-github icon"></i></div>
@@ -270,24 +300,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="group">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="stats portfolio-info-card">
-                                <h2>Stats</h2>
-                                <h3>LeetCode Stats</h3>
-                                <img src="https://leetcode-stats.vercel.app/api?username=divyansh1610" alt="LeetCode Stats" style="width: 100%; max-width: 500px;">
-                                <h3>GitHub Stats</h3>
-                                <img src="https://github-readme-stats.vercel.app/api?username=Divyansh1610&show_icons=true&theme=radical" alt="GitHub Stats" style="width: 100%; max-width: 500px;">
-                                <h3>Top Languages</h3>
-                                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Divyansh1610&layout=compact&theme=radical" alt="Top Languages" style="width: 100%; max-width: 500px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
+
     <footer class="page-footer">
         <div class="container">
             <div class="social-icons">
@@ -297,6 +313,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
 </body>
