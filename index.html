@@ -711,7 +711,7 @@ document.querySelectorAll('#navLinks a').forEach(a => { a.addEventListener('clic
 
 /* ── CERTIFICATES ── */
 // Your GitHub Pages base URL
-const SITE_BASE = 'https://divyansh1610.github.io/';
+const SITE_BASE = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/') ;
 
 // Download PDF via fetch → blob so it always saves as .pdf
 function downloadPDF(filename, saveAs) {
