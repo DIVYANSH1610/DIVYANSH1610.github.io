@@ -1400,10 +1400,15 @@ document.querySelectorAll('#navLinks a').forEach(a => {
 function openCertModal(pdfFile, title) {
   const backdrop = document.getElementById('certModalBackdrop');
   document.getElementById('certModalTitle').textContent = title;
-  document.getElementById('certModalIframe').src = pdfFile;
   document.getElementById('certModalInfo').textContent = pdfFile;
   document.getElementById('certModalViewLink').href = pdfFile;
   document.getElementById('certModalDownloadLink').href = pdfFile;
+
+  // Use Google Docs viewer — works reliably on GitHub Pages
+  const fullUrl = 'https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/' + pdfFile;
+  document.getElementById('certModalIframe').src =
+    'https://docs.google.com/viewer?url=' + encodeURIComponent(fullUrl) + '&embedded=true';
+
   backdrop.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
